@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Foo interface {
 	TestMethod(v int) int
 }
@@ -12,5 +14,8 @@ func (e *MyEcho) TestMethod(v int) int {
 }
 
 func main() {
+	me := MyEcho{}
 
+	fmt.Println("aaa")
+	fmt.Println("bbb", me.TestMethod(88))
 }

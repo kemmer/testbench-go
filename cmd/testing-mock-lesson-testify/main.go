@@ -17,6 +17,7 @@ type calculateRandomNumbers struct {
 
 func (s calculateRandomNumbers) randomMaximumNumber(m int, useless int) int {
 	_ = useless
+
 	return rand.Intn(m)
 }
 
